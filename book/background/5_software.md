@@ -47,13 +47,13 @@ Both tutorials use functions that are stored in scripts associated with each dat
 
 ## *Running tutorial materials on a hosted JupyterHub*
 
-Many NASA datasets including ITS_LIVE are hosted in the AWS us-west-2 data center. While these tutorial notebooks are designed to be run on any computer, if you intend to modify the notebooks and access data directly it is desirable to run computations in the same data center. A convenient way access a computer in AWS us-west-2 is to use a hosted JupyterHub platform such as one of the following:
+Many NASA datasets including ITS_LIVE are hosted in the AWS us-west-2 data center. While these tutorial notebooks are designed to be run on any computer, if you intend to modify the notebooks and access data directly it is desirable to run computations in the same data center. A convenient way to access a computer in AWS us-west-2 is to use a hosted JupyterHub platform such as one of the following:
 
 - https://docs.openveda.cloud/user-guide/scientific-computing/
 - https://opensarlab-docs.asf.alaska.edu
 - https://book.cryointhecloud.com/content/Getting_Started.html
 
-On these systems you can install software environment in the same way described above, but you must make the default JupyterLab interface aware of your environment. In Jupyter terminology you must specify a 'kernel'. Unfortunately there is not an automatic and uniform way of doing this, but a few manual steps can be followed:
+On these systems you can install your software environment in the same way described above, but you must make the default JupyterLab interface aware of your environment. In Jupyter terminology you must specify a 'kernel'. Unfortunately there is not an automatic and uniform way of doing this, but a few manual steps can be followed:
 
 1. Create a kernel specification subfolder under your home directory:
 ```
@@ -87,7 +87,7 @@ Available kernels:
   pixi       /home/jovyan/.local/share/jupyter/kernels/pixi
 ```
 
-Finally, you may need to reload your web browser in order to see 'Pixi (default)' as an optional kernel to select when you open one of the Jupyter Notebooks in this repository. With 'Pixi (default)' as the selected kernel code in the notebook will use the environment defined in your `.pixi` folder!
+Finally, you may need to reload your web browser in order to see 'Pixi (default)' as an optional kernel to select when you open one of the Jupyter Notebooks in this repository. With 'Pixi (default)' as the selected kernel, code in the notebook will use the environment defined in your `.pixi` folder!
 
 
 
