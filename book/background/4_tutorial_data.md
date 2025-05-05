@@ -2,7 +2,7 @@
 
 We use many different datasets throughout these tutorials. While each tutorial is focused on a different raster time series (ITS_LIVE ice velocity data and Sentinel-1 imagery), we also use vector data to represent points of interest. 
 
-Most of the examples in this book use data accessed programmatically from cloud-object storage. We make subset of the data available in this books Github repository to remove the need for computationally-intensive operations in the tutorials. In one example, working with Sentinel-1 data processed by Alaska Satellite Facility, we start with data downloaded locally. Users who would like to complete this processing step on their own may do so (and access the data [here](https://zenodo.org/records/15036782)), but a smaller subset of this data is stored in the repository. 
+Most of the examples in this book use data accessed programmatically from cloud-object storage. We make subsets of the data available in this book's Github repository to remove the need for computationally-intensive operations in the tutorials. In one example, working with Sentinel-1 data processed by Alaska Satellite Facility, we start with data downloaded locally. Users who would like to complete this processing step on their own may do so (and access the data [here](https://zenodo.org/records/15036782)), but a smaller subset of this data is stored in the repository. 
 
 Here is a broad overview the data included in this tutorial, including how it is collected, it's potential scientific applications, and how and where it is stored and accessed in these tutorials. 
 
@@ -13,7 +13,7 @@ Here is a broad overview the data included in this tutorial, including how it is
 | ITS_LIVE | [ITS_LIVE project, NASA JPL](https://its-live.jpl.nasa.gov/) | Zarr | AWS S3|
 
 
-ITS_LIVE is a dataset of ice velocity observations derived from applying a feature tracking algorithm to pairs of satellite imagery. Ice velocity refers to the down-slope movement of glaciers and ice sheets {cite}`Gardner_Scambos_2022`. Because glaciers and ice sheets are dynamic elements of our climate system, they lose or gain mass in response to changes in climate conditions such as warmer temperatures or increased snowfall, measuring variability in the speed of ice flow can help scientists better understand trends in glacier dynamics and interactions between glaciers and climate. 
+ITS_LIVE is a dataset of ice velocity observations derived from applying a feature tracking algorithm to pairs of satellite imagery. Ice velocity refers to the down-slope movement of glaciers and ice sheets {cite}`Gardner_Scambos_2022`. Because glaciers and ice sheets are dynamic elements of our climate system, they lose or gain mass in response to changes in climate conditions such as warmer temperatures or increased snowfall. Measuring variability in the speed of ice flow can help scientists better understand trends in glacier dynamics and interactions between glaciers and climate. 
 
 ```{figure} imgs/lopez06-3341335.png
 ---
@@ -44,7 +44,7 @@ Be sure to also check out the ITS_LIVE image pair velocities [documentation](htt
 
 ## *Sentinel-1 Radiometric Terrain Corrected (RTC) imagery*
 
-Part 2 focuses on Sentinel-1 Radiometric Terrain Corrected imagery. Sentinel-1 is a dataset of synthetic aperture radar (SAR) imagery collected from sensors located on satellites operated by the Sentinel satellites operated by the European Space Agency (ESA). SAR data is exciting because doesn't require solar illumination like passive optical systems and, at the wavelength where Sentinel-1 imagery is collected, it is minimally impacted by atmospheric water vapor, meaning that Sentinel-1 can acquire clear images of Earth's surface even during cloudy and nighttime conditions. SAR imagery has a wide range of scientific applications including monitoring land surface deformation related to seismic activities, tracking flooding extents following extreme weather events, and mapping deforestation and characterizing biomass. 
+The second tutorial focuses on Sentinel-1 Radiometric Terrain Corrected imagery. Sentinel-1 is a dataset of synthetic aperture radar (SAR) imagery collected from sensors located on satellites operated by the Sentinel satellites operated by the European Space Agency (ESA). SAR data is exciting because it doesn't require solar illumination like passive optical systems and, at the wavelength where Sentinel-1 imagery is collected, it is minimally impacted by atmospheric water vapor, meaning that Sentinel-1 can acquire clear images of Earth's surface even during cloudy and nighttime conditions. SAR imagery has a wide range of scientific applications including monitoring land surface deformation related to seismic activities, tracking flooding extents following extreme weather events, and mapping deforestation and characterizing biomass. 
 
 :::{tip}
 For an in-depth example of how SAR backscatter data can be used to map flooding extent, check out this [notebook](https://projectpythia.org/eo-datascience-cookbook/notebooks/tutorials/floodmapping.html) in the [Project Pythia Earth Observation Data Science Cookbook](https://projectpythia.org/eo-datascience-cookbook/README.html).
