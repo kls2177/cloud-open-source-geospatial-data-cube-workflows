@@ -19,5 +19,5 @@ This book features two tutorials, each focuses on a different earth observation 
 
 ## 5.3 Data cubes revisited [$\tiny \nearrow$](datacubes_revisited.md)
 
-Synthesizing lessons from tutorial examples to enumerate guidance and best-practices for working Xarray geospatial data cubes.
+This section synthesizes the lessons from the tutorial examples to enumerate guidance and best-practices for working Xarray geospatial data cubes.
 
